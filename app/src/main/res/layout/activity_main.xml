@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo del espacio -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/space_background"
+        android:scaleType="centerCrop"/>
+
+    <!-- Ventana circular -->
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circular_window"
+            android:scaleType="fitCenter"/>
+
+        <!-- Gato mirando al espacio -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cat"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <!-- Iconos de la interfaz -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_settings"/>
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_map"/>
+
+        <ImageButton
+            android:id="@+id/missionsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_missions"/>
+
+        <ImageButton
+            android:id="@+id/minigamesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_minigames"/>
+
+    </LinearLayout>
+
+</FrameLayout>
