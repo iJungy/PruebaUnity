@@ -45,13 +45,13 @@
         android:layout_gravity="bottom"
         android:padding="16dp"
         android:visibility="gone">
-
+        <!-- Salud-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/settingsButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:icon="@drawable/ic_settings"
+            app:icon="@drawable/icon_health"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             android:insetLeft="0dp"
@@ -61,12 +61,13 @@
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             android:text="25%"/>
 
+        <!-- Hambre-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/mapButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:icon="@drawable/ic_map"
+            app:icon="@drawable/icon_hungry"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             android:insetLeft="0dp"
@@ -76,12 +77,13 @@
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             android:text="50%"/>
 
+        <!-- fuerza Mental-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/missionsButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:icon="@drawable/ic_missions"
+            app:icon="@drawable/icon_brain"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             android:insetLeft="0dp"
@@ -91,12 +93,13 @@
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
             android:text="75%"/>
 
+        <!-- Fuerza-->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/minigamesButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:icon="@drawable/ic_minigames"
+            app:icon="@drawable/icon_strenght"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             android:insetLeft="0dp"
