@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -25,49 +26,125 @@
 
         <!-- Gato mirando al espacio -->
         <ImageView
+            android:id="@+id/catImage"
             android:layout_width="400dp"
             android:layout_height="400dp"
             android:src="@drawable/cat"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
 
     </FrameLayout>
 
-    <!-- Iconos de la interfaz -->
+    <!-- Botones circulares con porcentaje -->
     <LinearLayout
+        android:id="@+id/circularButtonsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="bottom"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:visibility="gone">
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/settingsButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_settings"/>
+            app:icon="@drawable/ic_settings"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+            android:text="25%"/>
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/mapButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_map"/>
+            app:icon="@drawable/ic_map"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+            android:text="50%"/>
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/missionsButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_missions"/>
+            app:icon="@drawable/ic_missions"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+            android:text="75%"/>
 
-        <ImageButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/minigamesButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_minigames"/>
+            app:icon="@drawable/ic_minigames"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"
+            android:text="100%"/>
 
     </LinearLayout>
+
+    <!-- Botones en las esquinas -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/topLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_top_left"
+            android:layout_gravity="top|start"
+            android:layout_margin="16dp"/>
+
+        <ImageButton
+            android:id="@+id/topRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_top_right"
+            android:layout_gravity="top|end"
+            android:layout_margin="16dp"/>
+
+        <ImageButton
+            android:id="@+id/bottomLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottom_left"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="16dp"/>
+
+        <ImageButton
+            android:id="@+id/bottomRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottom_right"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"/>
+
+    </FrameLayout>
 
 </FrameLayout>
