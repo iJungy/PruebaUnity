@@ -42,7 +42,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.foundation.layout.android)
+    implementation(libs.androidx.foundation.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("androidx.compose.ui:ui:1.0.5")
+    implementation ("androidx.compose.material3:material3:1.0.0-beta01")
+    implementation ("androidx.compose.material:material:1.0.5")
+    implementation ("androidx.compose.material:material-icons-extended:1.0.5")
+
 }

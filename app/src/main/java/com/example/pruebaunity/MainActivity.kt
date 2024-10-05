@@ -1,5 +1,6 @@
 package com.example.pruebaunity
 
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -10,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+
 // No se debe poner en horizontal, bloquear la vista, solo vertical
 @Composable
 fun GameInterface() {
