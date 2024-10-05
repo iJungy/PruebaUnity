@@ -10,22 +10,23 @@
         android:src="@drawable/background"
         android:scaleType="centerCrop"/>
 
-    <!-- Ventana circular -->
+    <!-- Ventana  -->
     <FrameLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="400dp"
+        android:layout_height="700dp"
         android:layout_gravity="center">
 
+        <!-- Forma de la ventana  -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/circular_window"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitXY"
+            android:src="@drawable/backgroundwindows" />
 
         <!-- Gato mirando al espacio -->
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
             android:src="@drawable/cat"
             android:layout_gravity="center"/>
 

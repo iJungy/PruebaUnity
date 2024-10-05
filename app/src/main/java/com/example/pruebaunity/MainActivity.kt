@@ -18,7 +18,7 @@ fun GameInterface() {
     Box(modifier = Modifier.fillMaxSize()) {
         // Fondo del espacio
         Image(
-            painter = painterResource(id = R.drawable.space_background),
+            painter = painterResource(id = R.drawable.background),
             contentDescription = "Fondo del espacio",
             modifier = Modifier.fillMaxSize()
         )
@@ -30,7 +30,7 @@ fun GameInterface() {
                 .align(Alignment.Center)
         ) {
             Image(
-                painter = painterResource(id = R.drawable.window),
+                painter = painterResource(id = R.drawable.backgroundwindows),
                 contentDescription = "Ventana",
                 modifier = Modifier.fillMaxSize()
             )
