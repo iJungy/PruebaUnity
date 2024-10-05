@@ -27,9 +27,9 @@
         <!-- Gato mirando al espacio -->
         <ImageView
             android:id="@+id/catImage"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:src="@drawable/cat"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pruebagato"
             android:layout_gravity="center"
             android:clickable="true"
             android:focusable="true"/>
@@ -120,7 +120,7 @@
             android:id="@+id/topLeftButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_top_left"
+            android:src="@drawable/iconmaptemp"
             android:layout_gravity="top|start"
             android:layout_margin="16dp"/>
 
@@ -128,7 +128,7 @@
             android:id="@+id/topRightButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_top_right"
+            android:src="@drawable/iconconfigtemp"
             android:layout_gravity="top|end"
             android:layout_margin="16dp"/>
 
@@ -136,7 +136,7 @@
             android:id="@+id/bottomLeftButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_bottom_left"
+            android:src="@drawable/iconmisiontemp"
             android:layout_gravity="bottom|start"
             android:layout_margin="16dp"/>
 
@@ -144,7 +144,7 @@
             android:id="@+id/bottomRightButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_bottom_right"
+            android:src="@drawable/iconminigametemp"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"/>
 
